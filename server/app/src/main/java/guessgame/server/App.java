@@ -6,7 +6,7 @@ package guessgame.server;
 import java.io.IOException;
 import java.net.ServerSocket;
 
-public class Server {
+public class App {
 
     public static final int SERVER_PORT = 9999;
 
