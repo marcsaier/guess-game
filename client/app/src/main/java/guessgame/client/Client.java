@@ -12,7 +12,7 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Scanner;
 
-public class App {
+public class Client {
 
     public static final int START_GAME = 0;
     public static final int SERVER_READY = 0;
