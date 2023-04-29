@@ -6,7 +6,7 @@ package guessgame.server;
 import java.io.IOException;
 import java.net.ServerSocket;
 
-public class App {
+public class Server {
 
     public static final int SERVER_PORT = 9999;
 
@@ -16,10 +16,9 @@ public class App {
             System.out.println("Server is up and running...");
             
             while (true) {
-                new GameThread(serverSocket.accept()).start();
+                new ServerThread(serverSocket.accept()).start();
 
             }
-            
         }
         catch (IOException e) {
             System.out.println("Server run into a IOException!");

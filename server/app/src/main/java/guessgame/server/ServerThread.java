@@ -6,7 +6,7 @@ import java.io.OutputStream;
 import java.net.Socket;
 import java.util.Random;
 
-public class GameThread extends Thread {
+public class ServerThread extends Thread {
     
     private final Socket serverSocket;
     
@@ -17,11 +17,9 @@ public class GameThread extends Thread {
     public static final int CORRECT_GUESS = 1;
     public static final int INCORRECT_GUESS = 2;
     public static final int GAME_OVER = 9;
+
     
-
-
-
-    public GameThread(Socket serverSocket) {
+    public ServerThread(Socket serverSocket) {
         this.serverSocket = serverSocket;
     }
 
