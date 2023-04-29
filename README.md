@@ -1,6 +1,5 @@
 # guess-game
 
-## A Java Server-Client over TCP exercice 
 ### Task:
 Implement a Guess Game Client and Server using TCP.
 Guess Game: the server picks a random number between 0 and 9. The client has 3 attempts to
