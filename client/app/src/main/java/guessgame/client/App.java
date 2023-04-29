@@ -28,7 +28,6 @@ public class App {
         Scanner scanner = new Scanner(System.in);
 
         try (Socket socket = new Socket(hostname, port))        {
-
             OutputStream toServer = socket.getOutputStream();
             InputStream fromServer = socket.getInputStream();
 
