@@ -5,7 +5,6 @@ package guessgame.server;
 
 import java.io.IOException;
 import java.net.ServerSocket;
-import java.net.Socket;
 
 public class App {
 
@@ -14,7 +13,7 @@ public class App {
     public static void main(String[] args) {
         
         try (ServerSocket serverSocket = new ServerSocket(SERVER_PORT);) {
-            System.out.println("Server is up an running...");
+            System.out.println("Server is up and running...");
             
             while (true) {
                 new GameThread(serverSocket.accept()).start();
