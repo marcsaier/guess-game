@@ -17,7 +17,7 @@ public class App {
             System.out.println("Server is up an running...");
             
             while (true) {
-                new GameThread(socket.accept()).start();
+                new GameThread(serverSocket.accept()).start();
 
             }
             
